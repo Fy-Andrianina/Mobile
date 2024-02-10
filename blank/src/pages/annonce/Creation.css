@@ -1,0 +1,8 @@
+#annonce{
+    padding-top: 10px;
+    display: grid;
+    margin: auto;
+    width: 64%;
+    grid-row-gap: 20px;
+}
+

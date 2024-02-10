@@ -1,0 +1,31 @@
+#personne{
+    display: flexbox;
+    margin-top: 100px;
+}
+
+#form {
+    display: grid;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#mail{
+    margin-left: 77.5px;
+    padding-top: 3px;
+}
+
+#validation{
+    padding-top: 15px;
+    margin-left: 132.5px;
+}
+
+#photo{
+    margin-left: 79.5px;
+    height: 80px;
+    width: 80px;
+}
+.personne{
+    border-style: outset;
+    
+}
+

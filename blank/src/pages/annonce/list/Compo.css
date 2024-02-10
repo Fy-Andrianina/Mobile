@@ -1,0 +1,55 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border:  1px solid #ccc;
+}
+
+.product {
+    box-shadow:  0  2px  4px rgba(0,  0,  0,  0.1);
+    padding:  1em;
+    margin:  1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image {
+    max-width:  100%;
+    height: auto;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:  100%;
+}
+
+.product-price {
+    font-weight: bold;
+}
+
+.product-stock {
+    font-style: italic;
+}
+
+.success {
+    color: green;
+}
+
+.warning {
+    color: orange;
+}
+
+.danger {
+    color: red;
+}
+
+.product-description {
+    margin-top:  1em;
+}
