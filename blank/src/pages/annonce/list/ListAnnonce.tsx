@@ -19,7 +19,7 @@ const ListAnnonce: React.FC = () => {
   // console.log(token);
   useEffect(() => {
     const result = async () => {
-      fetch('https://carselling-production-25cb.up.railway.app/api/annoncecontroller/annoncesUser', {
+      fetch('https://ventevoiture-production-639f.up.railway.app/api/annoncecontroller/annoncesUser', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ const ListAnnonce: React.FC = () => {
 
   const handleVendu = (event, product) => {
     const token = localStorage.getItem('token');
-      fetch('https://carselling-production-25cb.up.railway.app/api/annoncecontroller/updateStatut', {
+      fetch('https://ventevoiture-production-639f.up.railway.app/api/annoncecontroller/updateStatut', {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',

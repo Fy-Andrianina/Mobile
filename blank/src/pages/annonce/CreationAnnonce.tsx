@@ -34,10 +34,10 @@ const CreationAnnonce: React.FC = () => {
     const fetchData = async () => {
       try {
         const [model, moteurs, jantes, carburants] = await Promise.all([
-          getInformation('https://carselling-production-25cb.up.railway.app/api/modelcontroller/models'),
-          getInformation('https://carselling-production-25cb.up.railway.app/api/moteurcontroller/moteurs'),
-          getInformation('https://carselling-production-25cb.up.railway.app/api/jantecontroller/jantes'),
-          getInformation('https://carselling-production-25cb.up.railway.app/api/carburantcontroller/carburants'),
+          getInformation('https://ventevoiture-production-639f.up.railway.app/api/modelcontroller/models'),
+          getInformation('https://ventevoiture-production-639f.up.railway.app/api/moteurcontroller/moteurs'),
+          getInformation('https://ventevoiture-production-639f.up.railway.app/api/jantecontroller/jantes'),
+          getInformation('https://ventevoiture-production-639f.up.railway.app/api/carburantcontroller/carburants'),
         ]);
         setModeles(model);
         setMoteurs(moteurs);
@@ -88,7 +88,7 @@ const CreationAnnonce: React.FC = () => {
     const token = localStorage.getItem('token');
 
     console.log(formData);
-    await fetch('https://carselling-production-25cb.up.railway.app/api/annoncecontroller/add', {
+    await fetch('https://ventevoiture-production-639f.up.railway.app/api/annoncecontroller/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
