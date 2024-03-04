@@ -1,18 +1,17 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import * as React from 'react';
-import Password from './Password';
-import Personne from './Personne';
-import ButtonValidation from './ButtonValidation';
-import './Sign.css';
-import Sexe from './Sexe';
-import Button from '@mui/material/Button';
+import { IonContent, IonPage } from '@ionic/react';
 import { Box, TextField } from '@mui/material';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import Button from '@mui/material/Button';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import dayjs from 'dayjs';
+import * as React from 'react';
 import { useHistory } from 'react-router';
 import './Creation.css';
+import Password from './Password';
+import Personne from './Personne';
+import Sexe from './Sexe';
+import './Sign.css';
 
 const Sign: React.FC = () => {
   const [nom, setNom] = React.useState('');

@@ -1,19 +1,14 @@
 import { IonContent, IonPage } from '@ionic/react';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import { Badge, SpeedDialAction, TextField } from '@mui/material';
-import React, { useEffect, useState } from 'react';
-import Carburant from './Carburant';
-import './Creation.css';
-import Jante from './Jante';
-import Menu from './Menu';
-import Moteur from './Moteur';
-import NavbarAnnonce from './NavbarAnnonce';
-import SelectMenu from './SelectMenu';
-import UploadPic from './list/UploadPic';
+import { Badge, FormControl, InputLabel, MenuItem, Select, SpeedDialAction, TextField } from '@mui/material';
 import Button from '@mui/material/Button';
-import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
-import { getInformation } from '../../controller/getInformation';
+import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
+import { getInformation } from '../../controller/getInformation';
+import './Creation.css';
+import Menu from './Menu';
+import NavbarAnnonce from './NavbarAnnonce';
+import UploadPic from './list/UploadPic';
 
 const CreationAnnonce: React.FC = () => {
   const history = useHistory();

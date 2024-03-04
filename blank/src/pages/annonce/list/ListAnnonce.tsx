@@ -1,17 +1,15 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import { Avatar, Box, Chip, Divider, FormControl, IconButton, InputLabel, List, ListItem, ListItemAvatar, ListItemSecondaryAction, ListItemText, ListSubheader, MenuItem, OutlinedInput, Select, SelectChangeEvent, useTheme } from '@mui/material';
+import { IonContent, IonPage } from '@ionic/react';
+import { IconButton, List } from '@mui/material';
 // import EditIcon from '@mui/icons-material/Edit';
-import { Badge, Button, SpeedDialAction, TextField, ThemeProvider } from '@mui/material';
-import NotificationsIcon from '@mui/icons-material/Notifications';
+import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit';
+import { Button } from '@mui/material';
+import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router';
 import '../Creation.css';
 import Menu from '../Menu';
 import NavbarAnnonce from '../NavbarAnnonce';
-import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit';
-import ListCompo from './ListCompo';
 import GTR from './GTR35.jpg';
-import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router';
 
 const ListAnnonce: React.FC = () => {
   const [products, setProduct] = useState([]);

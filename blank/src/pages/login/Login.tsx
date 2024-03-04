@@ -1,12 +1,12 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonPage } from '@ionic/react';
+import { Box, TextField } from '@mui/material';
+import Button from '@mui/material/Button';
 import * as React from 'react';
-import Password from './Password';
-import Personne from './Personne';
+import { useHistory } from 'react-router';
 import ButtonValidation from './ButtonValidation';
 import './Login.css';
-import { Box, TextField } from '@mui/material';
-import { useHistory } from 'react-router';
-import Button from '@mui/material/Button';
+import Password from './Password';
+import Personne from './Personne';
 
 const Login: React.FC = () => {
   const [email, setEmail] = React.useState('');
